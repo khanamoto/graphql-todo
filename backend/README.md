@@ -5,6 +5,15 @@ npm install
 npm start
 ```
 
+## DB 作成・マイグレーション
+
+それぞれの環境で MySQL5.7 を起動後、
+
+```
+sequelize db:create
+sequelize db:migrate
+```
+
 ## Playground
 
 ```
