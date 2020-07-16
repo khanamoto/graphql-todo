@@ -8,7 +8,7 @@ npm start
 ## Playground
 
 ```
-open http://localhost:4000
+open http://localhost:4000/playground
 ```
 
 ## サンプル
