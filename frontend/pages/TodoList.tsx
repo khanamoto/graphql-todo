@@ -17,10 +17,16 @@ const TodoList = () => {
   if (loading || !data) {
     return <p>loading...</p>;
   }
+
   return (
-    <p>
-      {data.getTodos[0].id}: {data.getTodos[0].body}
-    </p>
+    <div>
+      <p>Todoリスト</p>
+      <ul>
+        <li>
+          {data?.getTodos[0]?.id} : {data?.getTodos[0]?.body}
+        </li>
+      </ul>
+    </div>
   );
 };
 
