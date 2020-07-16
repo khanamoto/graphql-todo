@@ -10,8 +10,8 @@ npm start
 それぞれの環境で MySQL5.7 を起動後、
 
 ```
-sequelize db:create
-sequelize db:migrate
+npx sequelize db:create
+npx sequelize db:migrate
 ```
 
 ## Playground
