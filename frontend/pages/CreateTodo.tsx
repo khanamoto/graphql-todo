@@ -3,9 +3,8 @@ import { useMutation } from "@apollo/react-hooks";
 import withApollo from "../lib/withApollo";
 
 const Mutation = gql`
-  {
+  mutation createTodo($body: String!) {
     createTodo(body: $body) {
-      id
       body
     }
   }

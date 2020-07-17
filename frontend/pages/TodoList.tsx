@@ -22,9 +22,11 @@ const TodoList = () => {
     <div>
       <p>Todoリスト</p>
       <ul>
-        <li>
-          {data?.getTodos[0]?.id} : {data?.getTodos[0]?.body}
-        </li>
+        {data?.getTodos?.map((todo) => (
+          <li key={todo.id}>
+            {todo.id} : {todo.body}
+          </li>
+        ))}
       </ul>
     </div>
   );
