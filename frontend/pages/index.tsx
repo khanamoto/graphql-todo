@@ -1,6 +1,7 @@
 import Head from "next/head";
 import TodoList from "./TodoList";
 import CreateTodo from "./CreateTodo";
+import DeleteTodo from "./DeleteTodo";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
 
       <main>
         <CreateTodo />
+        <DeleteTodo />
         <TodoList />
       </main>
     </div>

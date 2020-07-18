@@ -1,6 +1,8 @@
 import { gql } from "apollo-server";
 
 const typeDefs = gql`
+  scalar Void
+
   type Todo {
     id: ID!
     body: String!
@@ -13,7 +15,7 @@ const typeDefs = gql`
 
   type Mutation {
     createTodo(body: String!): Todo!
-    deleteTodo(todoId: ID!): String!
+    deleteTodo(todoId: ID!): Void
   }
 `;
 
