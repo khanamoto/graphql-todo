@@ -11,8 +11,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <TodoList />
         <CreateTodo />
+        <TodoList />
       </main>
     </div>
   );

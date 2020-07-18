@@ -24,7 +24,7 @@ const TodoList = () => {
       <ul>
         {data?.getTodos?.map((todo) => (
           <li key={todo.id}>
-            {todo.id} : {todo.body}
+            {todo.id}：{todo.body}
           </li>
         ))}
       </ul>
